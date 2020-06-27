@@ -13,9 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 // index main route
-Route::get('/', function () {
-    return view('welcome');
-})->name('main');
+Route::get('/', 'MainController@index')->name('main.index');
 
 // show all products
 Route::get('products', 'ProductController@index')->name('products.index');

@@ -8,7 +8,7 @@ class ProductController extends Controller
 {
     // show all products
     public function index () {
-        return 'The list of products FROM CONTROLLER'; 
+        return view('products.index'); 
     }
 
     // create form for a new product
@@ -23,7 +23,7 @@ class ProductController extends Controller
     
     // show single product
     public function show ($product){
-    return ' showing product FROM CONTROLLER'.$product;
+        return view('products.show');
     }
 
     // edit a selected single product 
